@@ -4,12 +4,12 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="title_create">tittle_create</string>
+    <string name="title_create">Crear</string>
     <string name="nombre">Digite nombre</string>
     <string name="telefono">Digite telefono</string>
     <string name="cantidad">Digite cantidad</string>
     <string name="guardar">Guardar</string>
-    <string name="title_read">title_read</string>
+    <string name="title_read">Buscar</string>
     <string name="buscar">Buscar</string>
     <string name="nombre_deudor">Nombre deudor</string>
     <string name="deuda">Deuda</string>
@@ -22,4 +22,38 @@
     <string name="aceptar">Aceptar</string>
     <string name="cancelar">Cancelar</string>
     <string name="title_list">Lista</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_splash">splash</string>
+    <string name="email">Email</string>
+    <string name="password">contraseña</string>
+    <string name="login">Ingresar</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="titulo">Formulario de registro</string>
+    <string name="Name2">Digite su usuario</string>
+    <string name="confirmar_password">Repetir Password</string>
+    <string name="genero">Genero</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="fecha">Fecha</string>
+    <string name="cine">Cine</string>
+    <string name="videojuegos">Videojuegos</string>
+    <string name="cocinar">Cocinar</string>
+
+    <string-array name="lista_ciudades">
+        <item>Seleccione una ciudad</item>
+        <item>Barranquilla</item>
+        <item>Bogota</item>
+        <item>Cali</item>
+        <item>Medellin</item>
+    </string-array>
 </resources>
