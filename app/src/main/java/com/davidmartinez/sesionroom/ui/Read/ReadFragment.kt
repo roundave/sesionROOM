@@ -7,11 +7,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.davidmartinez.sesionroom.R
-import com.davidmartinez.sesionroom.model.model.DeudorDAO
+import com.davidmartinez.sesionroom.model.model.local.DeudorDAO
 import com.davidmartinez.sesionroom.sesionROOM
 import kotlinx.android.synthetic.main.fragment_create.*
 import kotlinx.android.synthetic.main.fragment_read.*
-import kotlinx.android.synthetic.main.fragment_read.et_nombre as et_nombre1
 
 class ReadFragment : Fragment() {
 
@@ -28,9 +27,9 @@ class ReadFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        bt_buscar.setOnClickListener {
+        /*bt_buscar.setOnClickListener {
             val nombre= et_nombre.text.toString()
-            val deudorDAO:DeudorDAO=sesionROOM.database.DeudorDAO()
+            val deudorDAO: DeudorDAO =sesionROOM.database.DeudorDAO()
             val deudor=deudorDAO.BuscarDeudor(nombre)
 
             if(deudor!=null){
@@ -40,7 +39,7 @@ class ReadFragment : Fragment() {
             }else{
                 Toast.makeText(context, "Deudor no existe", Toast.LENGTH_SHORT).show()
             }
-        }
+        }*/
     }
 
 

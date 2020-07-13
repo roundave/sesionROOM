@@ -1,18 +1,16 @@
 package com.davidmartinez.sesionroom.ui.lista
 
-import android.app.Activity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.davidmartinez.sesionroom.DeudoresRVAdapter
 import com.davidmartinez.sesionroom.R
-import com.davidmartinez.sesionroom.model.model.Deudor
-import com.davidmartinez.sesionroom.model.model.DeudorDAO
+import com.davidmartinez.sesionroom.model.model.local.Deudor
+import com.davidmartinez.sesionroom.model.model.local.DeudorDAO
 import com.davidmartinez.sesionroom.sesionROOM
 
 
@@ -34,7 +32,7 @@ class listFragment : Fragment() {
             false
         )
         rv_deudores.setHasFixedSize(true)
-        var deudorDAO: DeudorDAO=sesionROOM.database.DeudorDAO()
+        var deudorDAO: DeudorDAO =sesionROOM.database.DeudorDAO()
         allDeudores=deudorDAO.getDeudores()
         var deudoresRVAdapter=DeudoresRVAdapter(
             requireActivity().applicationContext,

@@ -1,6 +1,7 @@
-package com.davidmartinez.sesionroom.model.model
+package com.davidmartinez.sesionroom.model.model.local
 
 import androidx.room.*
+import com.davidmartinez.sesionroom.model.model.local.Deudor
 
 @Dao
 interface DeudorDAO{
@@ -8,7 +9,7 @@ interface DeudorDAO{
     fun crearDeudor(deudor: Deudor)
 
     @Query("SELECT*FROM tabla_deudor where nombre LIKE :nombre ")
-    fun BuscarDeudor(nombre: String):Deudor
+    fun BuscarDeudor(nombre: String): Deudor
 
     @Update
     fun actualizarDeudor(deudor: Deudor)

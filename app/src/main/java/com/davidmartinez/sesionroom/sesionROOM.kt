@@ -2,8 +2,8 @@ package com.davidmartinez.sesionroom
 
 import  android.app.Application
 import  androidx.room.Room
-import com.davidmartinez.sesionroom.model.model.DeudorDatabase
-import com.davidmartinez.sesionroom.model.model.UsuarioDatabase
+import com.davidmartinez.sesionroom.model.model.local.DeudorDatabase
+import com.davidmartinez.sesionroom.model.model.local.UsuarioDatabase
 
 class sesionROOM: Application() {
 

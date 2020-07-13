@@ -4,11 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isGone
 import androidx.fragment.app.Fragment
 import com.davidmartinez.sesionroom.R
-import com.davidmartinez.sesionroom.model.model.Deudor
-import com.davidmartinez.sesionroom.model.model.DeudorDAO
+import com.davidmartinez.sesionroom.model.model.local.Deudor
+import com.davidmartinez.sesionroom.model.model.local.DeudorDAO
 import com.davidmartinez.sesionroom.sesionROOM
 import kotlinx.android.synthetic.main.fragment_update.*
 
@@ -32,9 +31,9 @@ class updateFragment : Fragment() {
         et_cantidad.visibility=View.GONE
         bt_actualizar.visibility=View.GONE
         var idDeudor=0
-        val deudorDAO: DeudorDAO=sesionROOM.database.DeudorDAO()
+        val deudorDAO: DeudorDAO =sesionROOM.database.DeudorDAO()
 
-        bt_buscar.setOnClickListener {
+        /*bt_buscar.setOnClickListener {
             val nombre=et_nombre.text.toString()
 
             val deudor=deudorDAO.BuscarDeudor(nombre)
@@ -51,9 +50,14 @@ class updateFragment : Fragment() {
         }
 
         bt_actualizar.setOnClickListener {
-            val deudor=Deudor(idDeudor, et_nombre.text.toString(), et_telefono.text.toString(), et_cantidad.text.toString())
+            val deudor= Deudor(
+                idDeudor,
+                et_nombre.text.toString(),
+                et_telefono.text.toString(),
+                et_cantidad.text.toString()
+            )
             deudorDAO.actualizarDeudor(deudor)
-        }
+        }*/
 
     }
 }

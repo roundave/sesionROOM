@@ -1,4 +1,4 @@
-package com.davidmartinez.sesionroom.model.model
+package com.davidmartinez.sesionroom.model.model.local
 
 import  androidx.room.Entity
 import  androidx.room.ColumnInfo
@@ -10,7 +10,7 @@ class Deudor(
     @ColumnInfo(name = "id") val id:Int,
     @ColumnInfo(name = "nombre") val nombre:String,
     @ColumnInfo(name = "Telefono") val telefono:String,
-    @ColumnInfo(name = "Cantidad") val cantidad: String
+    @ColumnInfo(name = "Cantidad") val cantidad: Long
 )
 
 

@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.davidmartinez.sesionroom.model.model.Deudor
+import com.davidmartinez.sesionroom.model.model.local.Deudor
 import kotlinx.android.synthetic.main.item_deudor.view.*
 
 class DeudoresRVAdapter(
@@ -39,7 +39,7 @@ class DeudoresRVAdapter(
     ) : RecyclerView.ViewHolder(itemView) {
         fun bindDeudor(deudor: Deudor) {
             itemView.tv_nombre.text = deudor.nombre
-            itemView.tv_cantidad.text = deudor.cantidad
+            itemView.tv_cantidad.text = deudor.cantidad.toString()
         }
     }
 }
